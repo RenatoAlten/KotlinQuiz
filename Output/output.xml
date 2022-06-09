@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 09:55:44.064" rpa="false" schemaversion="3">
+<suite id="s1" name="Renato" source="C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Tests\Renato.robot">
+<test id="s1-t1" name="Pasar" line="4">
+<kw name="Sleep" library="BuiltIn">
+<arg>1s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 09:55:45.093" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220609 09:55:44.089" endtime="20220609 09:55:45.093"/>
+</kw>
+<status status="PASS" starttime="20220609 09:55:44.089" endtime="20220609 09:55:45.094"/>
+</test>
+<status status="PASS" starttime="20220609 09:55:44.066" endtime="20220609 09:55:45.095"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Renato">Renato</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
