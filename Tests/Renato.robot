@@ -9,5 +9,6 @@ ${DEVICE_ID}    emulator-5554
 *** Test Cases ***
 Check Restore Contexts
     Change Context
+    Restart Application
     
 *** Keywords ***
