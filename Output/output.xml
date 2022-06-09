@@ -1,16 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 09:55:44.064" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 11:05:00.067" rpa="false" schemaversion="3">
 <suite id="s1" name="Renato" source="C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Tests\Renato.robot">
-<test id="s1-t1" name="Pasar" line="4">
-<kw name="Sleep" library="BuiltIn">
-<arg>1s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220609 09:55:45.093" level="INFO">Slept 1 second</msg>
-<status status="PASS" starttime="20220609 09:55:44.089" endtime="20220609 09:55:45.093"/>
+<test id="s1-t1" name="Check Home Page" line="10">
+<kw name="Begin Android Test" library="KotlinQuiz" type="SETUP">
+<kw name="Set Appium Timeout" library="AppiumLibrary">
+<arg>10</arg>
+<doc>Sets the timeout in seconds used by various keywords.</doc>
+<status status="PASS" starttime="20220609 11:05:00.256" endtime="20220609 11:05:00.256"/>
 </kw>
-<status status="PASS" starttime="20220609 09:55:44.089" endtime="20220609 09:55:45.094"/>
+<kw name="Open Application" library="AppiumLibrary">
+<arg>http://localhost:4723/wd/hub</arg>
+<arg>platformName=Android</arg>
+<arg>deviceName=${DEVICE_ID}</arg>
+<arg>appPackage=${APP-ID}</arg>
+<arg>appActivity=${APP-ACTIVITY}</arg>
+<arg>automationName=Uiautomator2</arg>
+<doc>Opens a new application to given Appium server.
+Capabilities of appium server, Android and iOS,
+Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
+| *Option*            | *Man.* | *Description*     |
+| remote_url          | Yes    | Appium server url |
+| alias               | no     | alias             |</doc>
+<status status="PASS" starttime="20220609 11:05:00.257" endtime="20220609 11:05:08.423"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
+<arg>${MAIN_FRAME_ID}</arg>
+<doc>Waits until element specified with `locator` appears on current page.</doc>
+<status status="PASS" starttime="20220609 11:05:08.423" endtime="20220609 11:05:09.001"/>
+</kw>
+<status status="PASS" starttime="20220609 11:05:00.256" endtime="20220609 11:05:09.001"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 11:05:10.013" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220609 11:05:09.002" endtime="20220609 11:05:10.013"/>
+</kw>
+<kw name="End Android Test" library="KotlinQuiz" type="TEARDOWN">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 11:05:11.017" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220609 11:05:10.014" endtime="20220609 11:05:11.018"/>
+</kw>
+<status status="PASS" starttime="20220609 11:05:10.013" endtime="20220609 11:05:11.018"/>
+</kw>
+<status status="PASS" starttime="20220609 11:05:00.256" endtime="20220609 11:05:11.018"/>
 </test>
-<status status="PASS" starttime="20220609 09:55:44.066" endtime="20220609 09:55:45.095"/>
+<status status="PASS" starttime="20220609 11:05:00.069" endtime="20220609 11:05:11.019"/>
 </suite>
 <statistics>
 <total>
