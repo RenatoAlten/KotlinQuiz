@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 11:59:02.195" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220609 15:59:37.284" rpa="false" schemaversion="3">
 <suite id="s1" name="Renato" source="C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Tests\Renato.robot">
-<test id="s1-t1" name="Check Restore Contexts" line="10">
+<test id="s1-t1" name="Test try" line="26">
 <kw name="Begin Android Test" library="KotlinQuiz" type="SETUP">
+<msg timestamp="20220609 15:59:37.439" level="TRACE">Arguments: [  ]</msg>
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>10</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20220609 11:59:02.343" endtime="20220609 11:59:02.343"/>
+<msg timestamp="20220609 15:59:37.439" level="TRACE">Arguments: [ '10' ]</msg>
+<msg timestamp="20220609 15:59:37.439" level="TRACE">Return: '5 seconds'</msg>
+<status status="PASS" starttime="20220609 15:59:37.439" endtime="20220609 15:59:37.439"/>
 </kw>
 <kw name="Run Application" library="KotlinQuiz">
+<msg timestamp="20220609 15:59:37.439" level="TRACE">Arguments: [ ${noReset}='false' ]</msg>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>noReset=${noReset}</arg>
@@ -23,93 +27,415 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220609 11:59:02.343" endtime="20220609 11:59:09.402"/>
+<msg timestamp="20220609 15:59:37.440" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | noReset='false' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.kotlinquiz.app' | appActivity='com.kotlinquiz.app.ui.splash.SplashActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220609 15:59:39.480" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:noReset": "false", "platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.kotlinquiz.app", "appium:appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"noReset": "false", "platformName": "Android", "deviceName": "emulator-5554", "appPackage": "com.kotlinquiz.app", "appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220609 15:59:39.495" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220609 15:59:43.900" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 966</msg>
+<msg timestamp="20220609 15:59:43.900" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:43.902" level="DEBUG">Opened application with session id 58c9f380-5737-42fd-845c-beaec288bfe2</msg>
+<msg timestamp="20220609 15:59:43.903" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220609 15:59:37.440" endtime="20220609 15:59:43.903"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:02.343" endtime="20220609 11:59:09.402"/>
+<msg timestamp="20220609 15:59:43.903" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:37.439" endtime="20220609 15:59:43.903"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${MAIN_AVARAR_ID}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220609 11:59:09.402" endtime="20220609 11:59:15.645"/>
+<msg timestamp="20220609 15:59:43.903" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/avatarImg' ]</msg>
+<msg timestamp="20220609 15:59:43.904" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:44.250" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:44.250" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:44.460" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:44.478" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:44.478" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:44.691" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:44.996" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:44.996" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:45.201" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:45.216" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:45.216" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:45.419" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:45.437" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:45.437" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:45.650" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:45.668" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:45.668" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:45.880" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:45.901" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:45.901" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:46.112" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:46.130" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:46.130" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:46.344" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:46.363" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:46.363" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:46.574" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:46.594" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:46.594" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:46.804" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:46.818" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:46.818" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:47.018" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:47.037" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:47.038" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:47.251" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:47.272" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:47.272" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:47.480" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:47.499" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:47.499" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:47.711" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:47.725" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:47.725" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:47.928" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:47.948" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:47.949" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:48.157" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:48.174" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:48.174" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:48.385" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:48.397" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:48.397" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:48.601" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:48.613" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:48.613" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:48.816" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:50.164" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 907</msg>
+<msg timestamp="20220609 15:59:50.165" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:50.165" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:43.903" endtime="20220609 15:59:50.165"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:02.342" endtime="20220609 11:59:15.645"/>
+<msg timestamp="20220609 15:59:50.165" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:37.439" endtime="20220609 15:59:50.165"/>
 </kw>
 <kw name="Change Context" library="KotlinQuiz">
+<msg timestamp="20220609 15:59:50.166" level="TRACE">Arguments: [  ]</msg>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${MAIN_AVARAR_ID}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220609 11:59:15.647" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/avatarImg'.</msg>
-<status status="PASS" starttime="20220609 11:59:15.646" endtime="20220609 11:59:15.748"/>
+<msg timestamp="20220609 15:59:50.166" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/avatarImg' ]</msg>
+<msg timestamp="20220609 15:59:50.167" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/avatarImg'.</msg>
+<msg timestamp="20220609 15:59:50.167" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220609 15:59:50.185" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 907</msg>
+<msg timestamp="20220609 15:59:50.185" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:50.185" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-003f-ffff-ffff00000015/click {"id": "00000000-0000-003f-ffff-ffff00000015"}</msg>
+<msg timestamp="20220609 15:59:50.227" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-003f-ffff-ffff00000015/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:50.227" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:50.227" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:50.166" endtime="20220609 15:59:50.227"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${AVATAR_OK_ID}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220609 11:59:15.748" endtime="20220609 11:59:16.906"/>
+<msg timestamp="20220609 15:59:50.228" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/btn_ok' ]</msg>
+<msg timestamp="20220609 15:59:50.228" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
+<msg timestamp="20220609 15:59:50.320" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:50.321" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:50.523" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
+<msg timestamp="20220609 15:59:51.512" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220609 15:59:51.512" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:51.512" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:50.227" endtime="20220609 15:59:51.512"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${AVATAR_OK_ID}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220609 11:59:16.907" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/btn_ok'.</msg>
-<status status="PASS" starttime="20220609 11:59:16.906" endtime="20220609 11:59:17.452"/>
+<msg timestamp="20220609 15:59:51.513" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/btn_ok' ]</msg>
+<msg timestamp="20220609 15:59:51.515" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/btn_ok'.</msg>
+<msg timestamp="20220609 15:59:51.515" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
+<msg timestamp="20220609 15:59:51.538" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220609 15:59:51.538" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:51.539" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0040-ffff-ffff00000034/click {"id": "00000000-0000-0040-ffff-ffff00000034"}</msg>
+<msg timestamp="20220609 15:59:52.112" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0040-ffff-ffff00000034/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:52.112" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:52.112" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:51.513" endtime="20220609 15:59:52.112"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${QUIZ_TITLE_ID}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220609 11:59:17.453" endtime="20220609 11:59:19.815"/>
+<msg timestamp="20220609 15:59:52.112" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/textView10' ]</msg>
+<msg timestamp="20220609 15:59:52.113" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
+<msg timestamp="20220609 15:59:52.650" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:52.650" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:52.855" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
+<msg timestamp="20220609 15:59:54.718" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 139</msg>
+<msg timestamp="20220609 15:59:54.718" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:54.718" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:52.112" endtime="20220609 15:59:54.718"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:15.646" endtime="20220609 11:59:19.815"/>
+<msg timestamp="20220609 15:59:54.718" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:50.165" endtime="20220609 15:59:54.718"/>
 </kw>
-<kw name="Restart Application" library="KotlinQuiz">
-<kw name="Close Application" library="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220609 11:59:19.816" endtime="20220609 11:59:20.173"/>
+<kw name="Test Test" library="KotlinQuiz">
+<msg timestamp="20220609 15:59:54.719" level="TRACE">Arguments: [  ]</msg>
+<for flavor="IN RANGE">
+<var>${Index}</var>
+<value>7</value>
+<iter>
+<var name="${Index}">0</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:54.720" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=0]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:54.720" level="TRACE">Return: '//android.widget.FrameLayout [@index=0] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:54.720" level="INFO">${result} = //android.widget.FrameLayout [@index=0] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:54.719" endtime="20220609 15:59:54.720"/>
 </kw>
-<kw name="Run Application" library="KotlinQuiz">
-<arg>noReset=true</arg>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>noReset=${noReset}</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${DEVICE_ID}</arg>
-<arg>appPackage=${APP-ID}</arg>
-<arg>appActivity=${APP-ACTIVITY}</arg>
-<arg>automationName=Uiautomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220609 11:59:20.173" endtime="20220609 11:59:26.772"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:54.720" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=0] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:54.721" level="INFO">Clicking element '//android.widget.FrameLayout [@index=0] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:54.722" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=0] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:55.206" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 1547</msg>
+<msg timestamp="20220609 15:59:55.206" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:55.206" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000004f/click {"id": "00000000-0000-0041-ffff-ffff0000004f"}</msg>
+<msg timestamp="20220609 15:59:55.463" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000004f/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:55.463" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:55.464" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:54.720" endtime="20220609 15:59:55.464"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:20.173" endtime="20220609 11:59:26.772"/>
+<status status="PASS" starttime="20220609 15:59:54.719" endtime="20220609 15:59:55.464"/>
+</iter>
+<iter>
+<var name="${Index}">1</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:55.464" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=1]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:55.464" level="TRACE">Return: '//android.widget.FrameLayout [@index=1] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:55.464" level="INFO">${result} = //android.widget.FrameLayout [@index=1] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:55.464" endtime="20220609 15:59:55.464"/>
 </kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${QUIZ_TITLE_ID}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220609 11:59:26.772" endtime="20220609 11:59:33.630"/>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:55.465" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=1] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:55.466" level="INFO">Clicking element '//android.widget.FrameLayout [@index=1] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:55.466" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=1] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:55.598" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 267</msg>
+<msg timestamp="20220609 15:59:55.598" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:55.598" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000005b/click {"id": "00000000-0000-0041-ffff-ffff0000005b"}</msg>
+<msg timestamp="20220609 15:59:56.110" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000005b/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:56.110" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:56.110" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:55.465" endtime="20220609 15:59:56.110"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:19.815" endtime="20220609 11:59:33.630"/>
+<status status="PASS" starttime="20220609 15:59:55.464" endtime="20220609 15:59:56.110"/>
+</iter>
+<iter>
+<var name="${Index}">2</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:56.111" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=2]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:56.111" level="TRACE">Return: '//android.widget.FrameLayout [@index=2] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:56.111" level="INFO">${result} = //android.widget.FrameLayout [@index=2] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:56.110" endtime="20220609 15:59:56.111"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:56.112" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=2] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:56.113" level="INFO">Clicking element '//android.widget.FrameLayout [@index=2] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:56.113" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=2] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:56.243" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 267</msg>
+<msg timestamp="20220609 15:59:56.243" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:56.243" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff00000067/click {"id": "00000000-0000-0041-ffff-ffff00000067"}</msg>
+<msg timestamp="20220609 15:59:56.758" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff00000067/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:56.758" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:56.758" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:56.111" endtime="20220609 15:59:56.758"/>
+</kw>
+<status status="PASS" starttime="20220609 15:59:56.110" endtime="20220609 15:59:56.758"/>
+</iter>
+<iter>
+<var name="${Index}">3</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:56.759" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=3]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:56.759" level="TRACE">Return: '//android.widget.FrameLayout [@index=3] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:56.760" level="INFO">${result} = //android.widget.FrameLayout [@index=3] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:56.759" endtime="20220609 15:59:56.760"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:56.760" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=3] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:56.761" level="INFO">Clicking element '//android.widget.FrameLayout [@index=3] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:56.761" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=3] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:56.933" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 267</msg>
+<msg timestamp="20220609 15:59:56.933" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:56.934" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff00000073/click {"id": "00000000-0000-0041-ffff-ffff00000073"}</msg>
+<msg timestamp="20220609 15:59:57.428" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff00000073/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:57.428" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:57.428" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:56.760" endtime="20220609 15:59:57.428"/>
+</kw>
+<status status="PASS" starttime="20220609 15:59:56.759" endtime="20220609 15:59:57.428"/>
+</iter>
+<iter>
+<var name="${Index}">4</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:57.429" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=4]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:57.429" level="TRACE">Return: '//android.widget.FrameLayout [@index=4] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:57.429" level="INFO">${result} = //android.widget.FrameLayout [@index=4] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:57.428" endtime="20220609 15:59:57.429"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:57.429" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=4] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:57.430" level="INFO">Clicking element '//android.widget.FrameLayout [@index=4] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:57.430" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=4] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:57.579" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 267</msg>
+<msg timestamp="20220609 15:59:57.580" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:57.580" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000007f/click {"id": "00000000-0000-0041-ffff-ffff0000007f"}</msg>
+<msg timestamp="20220609 15:59:58.076" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000007f/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:58.076" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:58.076" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:57.429" endtime="20220609 15:59:58.076"/>
+</kw>
+<status status="PASS" starttime="20220609 15:59:57.428" endtime="20220609 15:59:58.076"/>
+</iter>
+<iter>
+<var name="${Index}">5</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:58.077" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=5]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:58.077" level="TRACE">Return: '//android.widget.FrameLayout [@index=5] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:58.077" level="INFO">${result} = //android.widget.FrameLayout [@index=5] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:58.077" endtime="20220609 15:59:58.077"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:58.078" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=5] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:58.079" level="INFO">Clicking element '//android.widget.FrameLayout [@index=5] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:58.079" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=5] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:58.182" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 267</msg>
+<msg timestamp="20220609 15:59:58.182" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:58.182" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000008b/click {"id": "00000000-0000-0041-ffff-ffff0000008b"}</msg>
+<msg timestamp="20220609 15:59:58.725" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/element/00000000-0000-0041-ffff-ffff0000008b/click HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 15:59:58.725" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:58.725" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:58.077" endtime="20220609 15:59:58.725"/>
+</kw>
+<status status="PASS" starttime="20220609 15:59:58.076" endtime="20220609 15:59:58.725"/>
+</iter>
+<iter>
+<var name="${Index}">6</var>
+<kw name="Catenate" library="BuiltIn">
+<var>${result}</var>
+<arg>${QUIZ_CLASS}</arg>
+<arg>[@index=${${Index}}]</arg>
+<arg>${QUIZ_BUTTON_CLASS}</arg>
+<doc>Catenates the given items together and returns the resulted string.</doc>
+<msg timestamp="20220609 15:59:58.726" level="TRACE">Arguments: [ '//android.widget.FrameLayout' | '[@index=6]' | '//android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:58.726" level="TRACE">Return: '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton'</msg>
+<msg timestamp="20220609 15:59:58.726" level="INFO">${result} = //android.widget.FrameLayout [@index=6] //android.widget.RadioButton</msg>
+<status status="PASS" starttime="20220609 15:59:58.726" endtime="20220609 15:59:58.726"/>
+</kw>
+<kw name="Click Element" library="AppiumLibrary">
+<arg>${result}</arg>
+<doc>Click element identified by `locator`.</doc>
+<msg timestamp="20220609 15:59:58.727" level="TRACE">Arguments: [ '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton' ]</msg>
+<msg timestamp="20220609 15:59:58.728" level="INFO">Clicking element '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton'.</msg>
+<msg timestamp="20220609 15:59:58.728" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements {"using": "xpath", "value": "//android.widget.FrameLayout [@index=6] //android.widget.RadioButton"}</msg>
+<msg timestamp="20220609 15:59:58.837" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220609 15:59:58.837" level="DEBUG">Finished Request</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220609 15:59:58.838" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220609 15:59:58.839" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/screenshot {}</msg>
+<msg timestamp="20220609 15:59:59.108" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2/screenshot HTTP/1.1" 200 318458</msg>
+<msg timestamp="20220609 15:59:59.109" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 15:59:59.110" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220609 15:59:59.111" level="TRACE">Return: 'C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz\\Output\\appium-screenshot-1.png'</msg>
+<status status="PASS" starttime="20220609 15:59:58.838" endtime="20220609 15:59:59.111"/>
+</kw>
+<msg timestamp="20220609 15:59:59.111" level="FAIL">ValueError: Element locator '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton' did not match any elements.</msg>
+<msg timestamp="20220609 15:59:59.112" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\_element.py", line 42, in click_element
+    self._element_find(locator, True, True).click()
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\_element.py", line 576, in _element_find
+    raise ValueError("Element locator '" + locator + "' did not match any elements.")
+ValueError: Element locator '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton' did not match any elements.</msg>
+<status status="FAIL" starttime="20220609 15:59:58.726" endtime="20220609 15:59:59.112"/>
+</kw>
+<status status="FAIL" starttime="20220609 15:59:58.725" endtime="20220609 15:59:59.112"/>
+</iter>
+<status status="FAIL" starttime="20220609 15:59:54.719" endtime="20220609 15:59:59.112"/>
+</for>
+<status status="FAIL" starttime="20220609 15:59:54.719" endtime="20220609 15:59:59.113"/>
 </kw>
 <kw name="End Android Test" library="KotlinQuiz" type="TEARDOWN">
+<msg timestamp="20220609 15:59:59.114" level="TRACE">Arguments: [  ]</msg>
+<kw name="Sleep" library="BuiltIn">
+<arg>20s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20220609 15:59:59.114" level="TRACE">Arguments: [ '20s' ]</msg>
+<msg timestamp="20220609 16:00:19.127" level="INFO">Slept 20 seconds</msg>
+<msg timestamp="20220609 16:00:19.127" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:59.114" endtime="20220609 16:00:19.127"/>
+</kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220609 11:59:33.631" endtime="20220609 11:59:34.022"/>
+<msg timestamp="20220609 16:00:19.127" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220609 16:00:19.128" level="DEBUG">Closing application with session id 58c9f380-5737-42fd-845c-beaec288bfe2</msg>
+<msg timestamp="20220609 16:00:19.128" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2 {}</msg>
+<msg timestamp="20220609 16:00:19.497" level="DEBUG">http://127.0.0.1:4723 "DELETE /wd/hub/session/58c9f380-5737-42fd-845c-beaec288bfe2 HTTP/1.1" 200 14</msg>
+<msg timestamp="20220609 16:00:19.497" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220609 16:00:19.497" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 16:00:19.127" endtime="20220609 16:00:19.497"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:33.630" endtime="20220609 11:59:34.022"/>
+<msg timestamp="20220609 16:00:19.498" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220609 15:59:59.113" endtime="20220609 16:00:19.498"/>
 </kw>
-<status status="PASS" starttime="20220609 11:59:02.342" endtime="20220609 11:59:34.022"/>
+<tag>Current</tag>
+<status status="FAIL" starttime="20220609 15:59:37.438" endtime="20220609 16:00:19.498">ValueError: Element locator '//android.widget.FrameLayout [@index=6] //android.widget.RadioButton' did not match any elements.</status>
 </test>
-<status status="PASS" starttime="20220609 11:59:02.197" endtime="20220609 11:59:34.023"/>
+<status status="FAIL" starttime="20220609 15:59:37.285" endtime="20220609 16:00:19.499"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
+<stat pass="0" fail="1" skip="0">Current</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Renato">Renato</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Renato">Renato</stat>
 </suite>
 </statistics>
 <errors>

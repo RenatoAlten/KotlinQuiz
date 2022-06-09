@@ -1,1 +1,2 @@
-los Ids de los elementos tienen que ser únicos
+los Ids de los elementos tienen que ser únicos 
+Si hay cambios en los nombres de los ids, que se notifique formalmente
