@@ -2,6 +2,7 @@
 Resource    ../Resources/KotlinQuiz.robot
 Test Setup  Begin Android Test
 Test Teardown  End Android Test
+Library    Process
 
 *** Variables ***
 ${DEVICE_ID}    emulator-5554 
@@ -15,6 +16,7 @@ Install KotlinQuiz
     #Check Application is installed
 
 Check Restore Contexts
+    [Tags]    Current
     Change Context
     Restart Application
 
@@ -24,8 +26,9 @@ Select all yes
     Click all yes
 
 Test try
-    [Tags]    Current
+    
     Change Context
     Test Test
     
-*** Keywords ***
+*** Keywords ***    
+

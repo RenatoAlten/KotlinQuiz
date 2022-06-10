@@ -1,2 +1,8 @@
 los Ids de los elementos tienen que ser únicos 
 Si hay cambios en los nombres de los ids, que se notifique formalmente
+Tb pasa que cuando obtienes tu nota en jn cuestionario, luego ya se queda pillao
+Si el timeout del quiz se acaba se bloquea la app
+
+el contador de preguntas esta al reves 9/1
+
+si le das a atras despues de ver los resultados, el quiz vuelve a la 1/9 y luego salta a la 9/9
