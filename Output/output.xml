@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220610 15:26:21.890" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220701 10:09:53.494" rpa="false" schemaversion="3">
 <suite id="s1" name="Renato" source="C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Tests\Renato.robot">
 <test id="s1-t1" name="Check Restore Contexts" line="18">
 <kw name="Begin Android Test" library="Common" type="SETUP">
-<msg timestamp="20220610 15:26:22.038" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:09:53.688" level="TRACE">Arguments: [  ]</msg>
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>10</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<msg timestamp="20220610 15:26:22.039" level="TRACE">Arguments: [ '10' ]</msg>
-<msg timestamp="20220610 15:26:22.039" level="TRACE">Return: '5 seconds'</msg>
-<status status="PASS" starttime="20220610 15:26:22.039" endtime="20220610 15:26:22.039"/>
+<msg timestamp="20220701 10:09:53.688" level="TRACE">Arguments: [ '10' ]</msg>
+<msg timestamp="20220701 10:09:53.688" level="TRACE">Return: '5 seconds'</msg>
+<status status="PASS" starttime="20220701 10:09:53.688" endtime="20220701 10:09:53.688"/>
 </kw>
 <kw name="Start Appium" library="Common">
-<msg timestamp="20220610 15:26:22.039" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:09:53.688" level="TRACE">Arguments: [  ]</msg>
 <kw name="Start Process" library="Process">
 <arg>appium</arg>
 <arg>-a</arg>
@@ -24,10 +24,10 @@
 <arg>stdout=${EXECDIR}/Output/Appium Handler/appium_stdout.txt</arg>
 <arg>stderr=${EXECDIR}/Output/Appium Handler/appium_stderr.txt</arg>
 <doc>Starts a new process on background.</doc>
-<msg timestamp="20220610 15:26:22.040" level="TRACE">Arguments: [ 'appium' | '-a' | 'localhost' | '-p' | '4723' | shell='True' | alias='appiumserver' | stdout='C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz/Output/Appium Handler/appium_stdout.txt' | stderr='C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz/Output/Appium Handler/appium_stderr.txt' ]</msg>
-<msg timestamp="20220610 15:26:22.041" level="INFO">Starting process:
+<msg timestamp="20220701 10:09:53.688" level="TRACE">Arguments: [ 'appium' | '-a' | 'localhost' | '-p' | '4723' | shell='True' | alias='appiumserver' | stdout='C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz/Output/Appium Handler/appium_stdout.txt' | stderr='C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz/Output/Appium Handler/appium_stderr.txt' ]</msg>
+<msg timestamp="20220701 10:09:53.689" level="INFO">Starting process:
 appium -a localhost -p 4723</msg>
-<msg timestamp="20220610 15:26:22.041" level="DEBUG">Process configuration:
+<msg timestamp="20220701 10:09:53.689" level="DEBUG">Process configuration:
 cwd:     C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz
 shell:   True
 stdout:  C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Output\Appium Handler\appium_stdout.txt
@@ -35,28 +35,29 @@ stderr:  C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\
 stdin:   PIPE
 alias:   appiumserver
 env:     None</msg>
-<msg timestamp="20220610 15:26:22.050" level="TRACE">Return: &lt;Popen: returncode: None args: 'appium -a localhost -p 4723'&gt;</msg>
-<status status="PASS" starttime="20220610 15:26:22.040" endtime="20220610 15:26:22.050"/>
+<msg timestamp="20220701 10:09:53.697" level="TRACE">Return: &lt;Popen: returncode: None args: 'appium -a localhost -p 4723'&gt;</msg>
+<status status="PASS" starttime="20220701 10:09:53.688" endtime="20220701 10:09:53.697"/>
 </kw>
 <kw name="Process Should Be Running" library="Process">
 <arg>appiumserver</arg>
 <doc>Verifies that the process is running.</doc>
-<msg timestamp="20220610 15:26:22.051" level="TRACE">Arguments: [ 'appiumserver' ]</msg>
-<msg timestamp="20220610 15:26:22.051" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:22.050" endtime="20220610 15:26:22.051"/>
+<msg timestamp="20220701 10:09:53.697" level="TRACE">Arguments: [ 'appiumserver' ]</msg>
+<msg timestamp="20220701 10:09:53.697" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:09:53.697" endtime="20220701 10:09:53.697"/>
 </kw>
-<msg timestamp="20220610 15:26:22.051" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:22.039" endtime="20220610 15:26:22.051"/>
+<msg timestamp="20220701 10:09:53.698" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:09:53.688" endtime="20220701 10:09:53.698"/>
 </kw>
 <kw name="Run Application" library="Common">
-<msg timestamp="20220610 15:26:22.052" level="TRACE">Arguments: [ ${noReset}='false' ]</msg>
+<msg timestamp="20220701 10:09:53.698" level="TRACE">Arguments: [ ${noReset}='true' ]</msg>
 <kw name="Open Application" library="AppiumLibrary">
 <arg>http://localhost:4723/wd/hub</arg>
 <arg>noReset=${noReset}</arg>
 <arg>platformName=Android</arg>
+<arg>platformVersion=11</arg>
 <arg>deviceName=${DEVICE_ID}</arg>
-<arg>appPackage=${APP-ID}</arg>
-<arg>appActivity=${APP-ACTIVITY}</arg>
+<arg>appPackage=${MOCKO_PACKAGE}</arg>
+<arg>appActivity=${MVI_ID}</arg>
 <arg>automationName=Uiautomator2</arg>
 <doc>Opens a new application to given Appium server.
 Capabilities of appium server, Android and iOS,
@@ -64,299 +65,250 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<msg timestamp="20220610 15:26:22.053" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | noReset='false' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.kotlinquiz.app' | appActivity='com.kotlinquiz.app.ui.splash.SplashActivity' | automationName='Uiautomator2' ]</msg>
-<msg timestamp="20220610 15:26:24.095" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:noReset": "false", "platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.kotlinquiz.app", "appium:appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"noReset": "false", "platformName": "Android", "deviceName": "emulator-5554", "appPackage": "com.kotlinquiz.app", "appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "automationName": "Uiautomator2"}}</msg>
-<msg timestamp="20220610 15:26:24.106" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
-<msg timestamp="20220610 15:26:28.466" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 966</msg>
-<msg timestamp="20220610 15:26:28.466" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:28.467" level="DEBUG">Opened application with session id b9664feb-9691-49c6-b2d3-6d03d4a5480f</msg>
-<msg timestamp="20220610 15:26:28.468" level="TRACE">Return: 1</msg>
-<status status="PASS" starttime="20220610 15:26:22.052" endtime="20220610 15:26:28.468"/>
+<msg timestamp="20220701 10:09:53.699" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | noReset='true' | platformName='Android' | platformVersion='11' | deviceName='emulator-5554' | appPackage='com.example.testmviandmockito' | appActivity='com.example.testmviandmockito.ux.main.MainActivity' | automationName='Uiautomator2' ]</msg>
+<msg timestamp="20220701 10:09:55.755" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:noReset": "true", "platformName": "Android", "appium:platformVersion": "11", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.example.testmviandmockito", "appium:appActivity": "com.example.testmviandmockito.ux.main.MainActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"noReset": "true", "platformName": "Android", "platformVersion": "11", "deviceName": "emulator-5554", "appPackage": "com.example.testmviandmockito", "appActivity": "com.example.testmviandmockito.ux.main.MainActivity", "automationName": "Uiautomator2"}}</msg>
+<msg timestamp="20220701 10:09:55.768" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
+<msg timestamp="20220701 10:10:01.588" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 1023</msg>
+<msg timestamp="20220701 10:10:01.588" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:01.591" level="DEBUG">Opened application with session id f9d00b0b-75a1-4187-b704-58d34bb6b4f7</msg>
+<msg timestamp="20220701 10:10:01.591" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220701 10:09:53.698" endtime="20220701 10:10:01.591"/>
 </kw>
-<msg timestamp="20220610 15:26:28.468" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:22.051" endtime="20220610 15:26:28.468"/>
+<msg timestamp="20220701 10:10:01.591" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:09:53.698" endtime="20220701 10:10:01.591"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${MAIN_AVARAR_ID}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220610 15:26:28.468" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/avatarImg' ]</msg>
-<msg timestamp="20220610 15:26:28.469" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:28.766" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:28.766" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:28.974" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:29.443" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:29.443" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:29.658" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:29.671" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:29.671" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:29.876" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:29.888" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:29.889" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:30.092" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:30.104" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:30.105" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:30.311" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:30.325" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:30.325" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:30.527" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:30.544" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:30.545" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:30.758" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:30.774" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:30.774" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:30.978" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:30.992" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:30.992" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:31.194" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:31.212" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:31.212" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:31.412" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:31.431" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:31.431" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:31.644" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:31.657" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:31.657" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:31.861" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:31.875" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:31.875" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:32.077" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:32.094" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:32.094" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:32.294" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:32.312" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:32.312" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:32.526" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:32.542" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:32.542" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:32.743" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:32.755" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:32.756" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:32.961" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:32.972" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:32.972" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:33.178" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:34.517" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 907</msg>
-<msg timestamp="20220610 15:26:34.518" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:34.518" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:28.468" endtime="20220610 15:26:34.518"/>
+<msg timestamp="20220701 10:10:01.591" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/avatarImg' ]</msg>
+<msg timestamp="20220701 10:10:01.591" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:02.273" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:02.273" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:02.482" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:02.974" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:02.974" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:03.186" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:03.205" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:03.205" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:03.407" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:03.428" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:03.428" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:03.640" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:03.663" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:03.663" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:03.872" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:03.893" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:03.894" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:04.104" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:04.122" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:04.122" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:04.337" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:04.358" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:04.359" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:04.572" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:04.591" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:04.591" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:04.791" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:04.808" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:04.808" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:05.011" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:05.033" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:05.033" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:05.243" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:05.260" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:05.260" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:05.463" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:05.480" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:05.480" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:05.685" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:05.707" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:05.707" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:05.919" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:05.941" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:05.942" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:06.154" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:06.170" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:06.170" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:06.375" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:06.389" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:06.389" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:06.598" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:06.676" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:06.677" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:06.879" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:07.570" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:07.570" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:07.776" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:07.793" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:07.793" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:07.996" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:08.015" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:08.015" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:08.230" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:08.249" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:08.249" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:08.465" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:08.481" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:08.481" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:08.686" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:08.719" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:08.719" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:08.920" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:08.941" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:08.941" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:09.155" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:09.176" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:09.176" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:09.391" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:09.408" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:09.408" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:09.611" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:09.628" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:09.628" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:09.830" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:09.849" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:09.849" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:10.050" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:10.066" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:10.066" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:10.271" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:10.284" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:10.285" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:10.492" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:10.509" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:10.509" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:10.712" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:10.730" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:10.730" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:10.932" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:10.950" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:10.950" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:11.151" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
+<msg timestamp="20220701 10:10:11.957" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/elements HTTP/1.1" 200 12</msg>
+<msg timestamp="20220701 10:10:11.958" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:12.061" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/source {}</msg>
+<msg timestamp="20220701 10:10:12.670" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/source HTTP/1.1" 200 13232</msg>
+<msg timestamp="20220701 10:10:12.670" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:12.672" level="INFO">&lt;?xml version='1.0' encoding='UTF-8' standalone='yes' ?&gt;
+&lt;hierarchy index="0" class="hierarchy" rotation="0" width="1080" height="2088"&gt;
+  &lt;android.widget.FrameLayout index="0" package="com.example.testmviandmockito" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+    &lt;android.widget.LinearLayout index="0" package="com.example.testmviandmockito" class="android.widget.LinearLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,0][1080,2088]" displayed="true"&gt;
+      &lt;android.widget.FrameLayout index="0" package="com.example.testmviandmockito" class="android.widget.FrameLayout" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+        &lt;android.view.ViewGroup index="0" package="com.example.testmviandmockito" class="android.view.ViewGroup" text="" resource-id="com.example.testmviandmockito:id/decor_content_parent" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,2088]" displayed="true"&gt;
+          &lt;android.widget.FrameLayout index="0" package="com.example.testmviandmockito" class="android.widget.FrameLayout" text="" resource-id="com.example.testmviandmockito:id/action_bar_container" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,220]" displayed="true"&gt;
+            &lt;android.view.ViewGroup index="0" package="com.example.testmviandmockito" class="android.view.ViewGroup" text="" resource-id="com.example.testmviandmockito:id/action_bar" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,66][1080,220]" displayed="true"&gt;
+              &lt;android.widget.TextView index="0" package="com.example.testmviandmockito" class="android.widget.TextView" text="TestMVIAndMockito" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[44,106][560,180]" displayed="true" /&gt;
+            &lt;/android.view.ViewGroup&gt;
+          &lt;/android.widget.FrameLayout&gt;
+          &lt;android.widget.FrameLayout index="1" package="com.example.testmviandmockito" class="android.widget.FrameLayout" text="" resource-id="android:id/content" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,220][1080,2088]" displayed="true"&gt;
+            &lt;androidx.compose.ui.platform.ComposeView index="0" package="com.example.testmviandmockito" class="androidx.compose.ui.platform.ComposeView" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,220][1080,2088]" displayed="true"&gt;
+              &lt;android.view.View index="0" package="com.example.testmviandmockito" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,220][1080,2088]" displayed="true"&gt;
+                &lt;android.view.View index="0" package="com.example.testmviandmockito" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,220][1080,2088]" displayed="true"&gt;
+                  &lt;android.view.View index="0" package="com.example.testmviandmockito" class="android.view.View" text="" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,220][568,352]" displayed="true"&gt;
+                    &lt;android.view.View index="0" package="com.example.testmviandmockito" class="android.view.View" text="Configuración de servidor" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[22,261][546,313]" displayed="true" /&gt;
+                    &lt;android.widget.Button index="1" package="com.example.testmviandmockito" class="android.widget.Button" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,237][568,336]" displayed="true" /&gt;
+                  &lt;/android.view.View&gt;
+                  &lt;android.view.View index="1" package="com.example.testmviandmockito" class="android.view.View" text="" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[0,352][1080,1349]" displayed="true"&gt;
+                    &lt;android.widget.ImageView index="0" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="developer" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,418][266,618]" displayed="true" /&gt;
+                    &lt;android.view.View index="1" package="com.example.testmviandmockito" class="android.view.View" text="developer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,618][257,677]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="2" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="lady" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,418][597,618]" displayed="true" /&gt;
+                    &lt;android.view.View index="3" package="com.example.testmviandmockito" class="android.view.View" text="lady" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,618][478,677]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="4" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="engineer" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[728,418][928,618]" displayed="true" /&gt;
+                    &lt;android.view.View index="5" package="com.example.testmviandmockito" class="android.view.View" text="engineer" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[728,618][896,677]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="6" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="intern" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,721][266,921]" displayed="true" /&gt;
+                    &lt;android.view.View index="7" package="com.example.testmviandmockito" class="android.view.View" text="intern" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,921][177,980]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="8" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="boy" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,721][597,921]" displayed="true" /&gt;
+                    &lt;android.view.View index="9" package="com.example.testmviandmockito" class="android.view.View" text="boy" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,921][468,980]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="10" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="alber" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[728,721][928,921]" displayed="true" /&gt;
+                    &lt;android.view.View index="11" package="com.example.testmviandmockito" class="android.view.View" text="alber" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[728,921][826,980]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="12" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="hacker" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,1024][266,1224]" displayed="true" /&gt;
+                    &lt;android.view.View index="13" package="com.example.testmviandmockito" class="android.view.View" text="hacker" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[66,1224][197,1283]" displayed="true" /&gt;
+                    &lt;android.widget.ImageView index="14" package="com.example.testmviandmockito" class="android.widget.ImageView" text="" content-desc="tom" checkable="false" checked="false" clickable="true" enabled="true" focusable="true" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,1024][597,1224]" displayed="true" /&gt;
+                    &lt;android.view.View index="15" package="com.example.testmviandmockito" class="android.view.View" text="tom" checkable="false" checked="false" clickable="false" enabled="true" focusable="false" focused="false" long-clickable="false" password="false" scrollable="false" selected="false" bounds="[397,1224][475,1283]" displayed="true" /&gt;
+                  &lt;/android.view.View&gt;
+                &lt;/android.view.View&gt;
+              &lt;/android.view.View&gt;
+            &lt;/androidx.compose.ui.platform.ComposeView&gt;
+          &lt;/android.widget.FrameLayout&gt;
+        &lt;/android.view.ViewGroup&gt;
+      &lt;/android.widget.FrameLayout&gt;
+    &lt;/android.widget.LinearLayout&gt;
+  &lt;/android.widget.FrameLayout&gt;
+&lt;/hierarchy&gt;</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220701 10:10:12.672" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:10:12.673" level="DEBUG">GET http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/screenshot {}</msg>
+<msg timestamp="20220701 10:10:13.110" level="DEBUG">http://127.0.0.1:4723 "GET /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7/screenshot HTTP/1.1" 200 754606</msg>
+<msg timestamp="20220701 10:10:13.115" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:13.119" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220701 10:10:13.119" level="TRACE">Return: 'C:\\Users\\renato.martin\\Desktop\\Shits\\Airbus\\KotlinQuiz\\code\\KotlinQuiz\\Output\\appium-screenshot-1.png'</msg>
+<status status="PASS" starttime="20220701 10:10:12.672" endtime="20220701 10:10:13.119"/>
 </kw>
-<msg timestamp="20220610 15:26:34.518" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:22.038" endtime="20220610 15:26:34.518"/>
+<msg timestamp="20220701 10:10:13.120" level="FAIL">Element 'id=com.kotlinquiz.app:id/avatarImg' did not appear in 10 seconds</msg>
+<msg timestamp="20220701 10:10:13.121" level="DEBUG">Traceback (most recent call last):
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\decorator.py", line 232, in fun
+    return caller(func, *(extras + args), **kw)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 21, in _run_on_failure_decorator
+    raise err
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\keywordgroup.py", line 16, in _run_on_failure_decorator
+    return method(*args, **kwargs)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 88, in wait_until_page_contains_element
+    self._wait_until(timeout, error, self._is_element_present, locator)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 122, in _wait_until
+    self._wait_until_no_error(timeout, wait_func)
+  File "C:\Users\renato.martin\AppData\Local\Programs\Python\Python310\lib\site-packages\AppiumLibrary\keywords\_waiting.py", line 133, in _wait_until_no_error
+    raise AssertionError(timeout_error)
+AssertionError: Element 'id=com.kotlinquiz.app:id/avatarImg' did not appear in 10 seconds</msg>
+<status status="FAIL" starttime="20220701 10:10:01.591" endtime="20220701 10:10:13.121"/>
 </kw>
-<kw name="Change Context" library="KotlinQuiz">
-<msg timestamp="20220610 15:26:34.519" level="TRACE">Arguments: [  ]</msg>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${MAIN_AVARAR_ID}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220610 15:26:34.519" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/avatarImg' ]</msg>
-<msg timestamp="20220610 15:26:34.520" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/avatarImg'.</msg>
-<msg timestamp="20220610 15:26:34.520" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/avatarImg"}</msg>
-<msg timestamp="20220610 15:26:34.542" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 907</msg>
-<msg timestamp="20220610 15:26:34.542" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:34.543" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/element/00000000-0000-005d-ffff-ffff00000015/click {"id": "00000000-0000-005d-ffff-ffff00000015"}</msg>
-<msg timestamp="20220610 15:26:34.588" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/element/00000000-0000-005d-ffff-ffff00000015/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220610 15:26:34.589" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:34.589" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:34.519" endtime="20220610 15:26:34.589"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${AVATAR_OK_ID}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220610 15:26:34.589" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/btn_ok' ]</msg>
-<msg timestamp="20220610 15:26:34.589" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
-<msg timestamp="20220610 15:26:34.626" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:34.626" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:34.837" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
-<msg timestamp="20220610 15:26:35.612" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220610 15:26:35.612" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:35.612" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:34.589" endtime="20220610 15:26:35.612"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${AVATAR_OK_ID}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220610 15:26:35.612" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/btn_ok' ]</msg>
-<msg timestamp="20220610 15:26:35.613" level="INFO">Clicking element 'id=com.kotlinquiz.app:id/btn_ok'.</msg>
-<msg timestamp="20220610 15:26:35.613" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/btn_ok"}</msg>
-<msg timestamp="20220610 15:26:35.624" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220610 15:26:35.625" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:35.625" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/element/00000000-0000-005e-ffff-ffff00000034/click {"id": "00000000-0000-005e-ffff-ffff00000034"}</msg>
-<msg timestamp="20220610 15:26:36.146" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/element/00000000-0000-005e-ffff-ffff00000034/click HTTP/1.1" 200 14</msg>
-<msg timestamp="20220610 15:26:36.146" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:36.147" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:35.612" endtime="20220610 15:26:36.147"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${QUIZ_TITLE_ID}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220610 15:26:36.147" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/textView10' ]</msg>
-<msg timestamp="20220610 15:26:36.147" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:36.371" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:36.371" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:36.582" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:38.428" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220610 15:26:38.428" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:38.429" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:36.147" endtime="20220610 15:26:38.429"/>
-</kw>
-<msg timestamp="20220610 15:26:38.429" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:34.518" endtime="20220610 15:26:38.429"/>
-</kw>
-<kw name="Restart Application" library="Common">
-<msg timestamp="20220610 15:26:38.430" level="TRACE">Arguments: [  ]</msg>
-<kw name="Close Application" library="AppiumLibrary">
-<doc>Closes the current application and also close webdriver session.</doc>
-<msg timestamp="20220610 15:26:38.430" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20220610 15:26:38.431" level="DEBUG">Closing application with session id b9664feb-9691-49c6-b2d3-6d03d4a5480f</msg>
-<msg timestamp="20220610 15:26:38.431" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f {}</msg>
-<msg timestamp="20220610 15:26:38.712" level="DEBUG">http://127.0.0.1:4723 "DELETE /wd/hub/session/b9664feb-9691-49c6-b2d3-6d03d4a5480f HTTP/1.1" 200 14</msg>
-<msg timestamp="20220610 15:26:38.712" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:38.712" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:38.430" endtime="20220610 15:26:38.712"/>
-</kw>
-<kw name="Run Application" library="Common">
-<arg>noReset=true</arg>
-<msg timestamp="20220610 15:26:38.713" level="TRACE">Arguments: [ ${noReset}='true' ]</msg>
-<kw name="Open Application" library="AppiumLibrary">
-<arg>http://localhost:4723/wd/hub</arg>
-<arg>noReset=${noReset}</arg>
-<arg>platformName=Android</arg>
-<arg>deviceName=${DEVICE_ID}</arg>
-<arg>appPackage=${APP-ID}</arg>
-<arg>appActivity=${APP-ACTIVITY}</arg>
-<arg>automationName=Uiautomator2</arg>
-<doc>Opens a new application to given Appium server.
-Capabilities of appium server, Android and iOS,
-Please check https://github.com/appium/appium/blob/master/docs/en/writing-running-appium/server-args.md
-| *Option*            | *Man.* | *Description*     |
-| remote_url          | Yes    | Appium server url |
-| alias               | no     | alias             |</doc>
-<msg timestamp="20220610 15:26:38.713" level="TRACE">Arguments: [ 'http://localhost:4723/wd/hub' | noReset='true' | platformName='Android' | deviceName='emulator-5554' | appPackage='com.kotlinquiz.app' | appActivity='com.kotlinquiz.app.ui.splash.SplashActivity' | automationName='Uiautomator2' ]</msg>
-<msg timestamp="20220610 15:26:40.763" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session {"capabilities": {"firstMatch": [{"appium:noReset": "true", "platformName": "Android", "appium:deviceName": "emulator-5554", "appium:appPackage": "com.kotlinquiz.app", "appium:appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "appium:automationName": "Uiautomator2"}]}, "desiredCapabilities": {"noReset": "true", "platformName": "Android", "deviceName": "emulator-5554", "appPackage": "com.kotlinquiz.app", "appActivity": "com.kotlinquiz.app.ui.splash.SplashActivity", "automationName": "Uiautomator2"}}</msg>
-<msg timestamp="20220610 15:26:40.763" level="DEBUG">Starting new HTTP connection (1): 127.0.0.1:4723</msg>
-<msg timestamp="20220610 15:26:44.839" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session HTTP/1.1" 200 964</msg>
-<msg timestamp="20220610 15:26:44.839" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:44.841" level="DEBUG">Opened application with session id 96c4ffab-3c8e-4946-bd62-0d14f0a0f362</msg>
-<msg timestamp="20220610 15:26:44.841" level="TRACE">Return: 2</msg>
-<status status="PASS" starttime="20220610 15:26:38.713" endtime="20220610 15:26:44.841"/>
-</kw>
-<msg timestamp="20220610 15:26:44.841" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:38.712" endtime="20220610 15:26:44.841"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="AppiumLibrary">
-<arg>${QUIZ_TITLE_ID}</arg>
-<doc>Waits until element specified with `locator` appears on current page.</doc>
-<msg timestamp="20220610 15:26:44.842" level="TRACE">Arguments: [ 'id=com.kotlinquiz.app:id/textView10' ]</msg>
-<msg timestamp="20220610 15:26:44.842" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:45.850" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:45.850" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:46.057" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:46.070" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:46.070" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:46.273" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:46.286" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:46.286" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:46.488" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:46.501" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:46.501" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:46.706" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:46.718" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:46.719" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:46.922" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:46.938" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:46.938" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:47.153" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:47.172" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:47.172" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:47.384" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:47.399" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:47.400" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:47.602" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:47.624" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:47.624" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:47.832" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:47.846" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:47.846" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:48.050" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:48.073" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:48.073" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:48.283" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:48.298" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:48.298" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:48.500" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:48.513" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:48.513" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:48.717" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:48.733" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:48.734" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:48.934" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:48.948" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:48.949" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:49.150" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:49.169" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:49.169" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:49.382" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:49.397" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:49.397" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:49.601" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:49.611" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:49.612" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:49.818" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:50.463" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 12</msg>
-<msg timestamp="20220610 15:26:50.464" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:50.675" level="DEBUG">POST http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements {"using": "id", "value": "com.kotlinquiz.app:id/textView10"}</msg>
-<msg timestamp="20220610 15:26:51.280" level="DEBUG">http://127.0.0.1:4723 "POST /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362/elements HTTP/1.1" 200 139</msg>
-<msg timestamp="20220610 15:26:51.281" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:51.281" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:44.841" endtime="20220610 15:26:51.281"/>
-</kw>
-<msg timestamp="20220610 15:26:51.281" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:38.429" endtime="20220610 15:26:51.281"/>
+<status status="FAIL" starttime="20220701 10:09:53.687" endtime="20220701 10:10:13.121"/>
 </kw>
 <kw name="End Android Test" library="Common" type="TEARDOWN">
-<msg timestamp="20220610 15:26:51.282" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:10:13.123" level="TRACE">Arguments: [  ]</msg>
 <kw name="Stop Appium process" library="Common">
-<msg timestamp="20220610 15:26:51.282" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:10:13.123" level="TRACE">Arguments: [  ]</msg>
 <kw name="Terminate Process" library="Process">
 <arg>appiumserver</arg>
 <arg>kill=True</arg>
 <doc>Stops the process gracefully or forcefully.</doc>
-<msg timestamp="20220610 15:26:51.282" level="TRACE">Arguments: [ 'appiumserver' | kill=True ]</msg>
-<msg timestamp="20220610 15:26:51.282" level="INFO">Forcefully killing process.</msg>
-<msg timestamp="20220610 15:26:51.282" level="INFO">Process completed.</msg>
-<msg timestamp="20220610 15:26:51.282" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x000001C08FA15450&gt;</msg>
-<status status="PASS" starttime="20220610 15:26:51.282" endtime="20220610 15:26:51.282"/>
+<msg timestamp="20220701 10:10:13.123" level="TRACE">Arguments: [ 'appiumserver' | kill=True ]</msg>
+<msg timestamp="20220701 10:10:13.123" level="INFO">Forcefully killing process.</msg>
+<msg timestamp="20220701 10:10:13.124" level="INFO">Process completed.</msg>
+<msg timestamp="20220701 10:10:13.124" level="TRACE">Return: &lt;robot.libraries.Process.ExecutionResult object at 0x000001F66EC8DEA0&gt;</msg>
+<status status="PASS" starttime="20220701 10:10:13.123" endtime="20220701 10:10:13.124"/>
 </kw>
-<msg timestamp="20220610 15:26:51.283" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:51.282" endtime="20220610 15:26:51.283"/>
+<msg timestamp="20220701 10:10:13.124" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:10:13.123" endtime="20220701 10:10:13.124"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<msg timestamp="20220610 15:26:51.283" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20220610 15:26:51.284" level="DEBUG">Closing application with session id 96c4ffab-3c8e-4946-bd62-0d14f0a0f362</msg>
-<msg timestamp="20220610 15:26:51.284" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362 {}</msg>
-<msg timestamp="20220610 15:26:51.559" level="DEBUG">http://127.0.0.1:4723 "DELETE /wd/hub/session/96c4ffab-3c8e-4946-bd62-0d14f0a0f362 HTTP/1.1" 200 14</msg>
-<msg timestamp="20220610 15:26:51.559" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220610 15:26:51.559" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:51.283" endtime="20220610 15:26:51.559"/>
+<msg timestamp="20220701 10:10:13.124" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220701 10:10:13.127" level="DEBUG">Closing application with session id f9d00b0b-75a1-4187-b704-58d34bb6b4f7</msg>
+<msg timestamp="20220701 10:10:13.127" level="DEBUG">DELETE http://127.0.0.1:4723/wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7 {}</msg>
+<msg timestamp="20220701 10:10:13.432" level="DEBUG">http://127.0.0.1:4723 "DELETE /wd/hub/session/f9d00b0b-75a1-4187-b704-58d34bb6b4f7 HTTP/1.1" 200 14</msg>
+<msg timestamp="20220701 10:10:13.433" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220701 10:10:13.433" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:10:13.124" endtime="20220701 10:10:13.433"/>
 </kw>
-<msg timestamp="20220610 15:26:51.559" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220610 15:26:51.281" endtime="20220610 15:26:51.559"/>
+<msg timestamp="20220701 10:10:13.434" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220701 10:10:13.122" endtime="20220701 10:10:13.434"/>
 </kw>
 <tag>Current</tag>
-<status status="PASS" starttime="20220610 15:26:22.038" endtime="20220610 15:26:51.560"/>
+<status status="FAIL" starttime="20220701 10:09:53.687" endtime="20220701 10:10:13.434">Setup failed:
+Element 'id=com.kotlinquiz.app:id/avatarImg' did not appear in 10 seconds</status>
 </test>
-<status status="PASS" starttime="20220610 15:26:21.891" endtime="20220610 15:26:51.561"/>
+<status status="FAIL" starttime="20220701 10:09:53.496" endtime="20220701 10:10:13.436"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Current</stat>
+<stat pass="0" fail="1" skip="0">Current</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Renato">Renato</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Renato">Renato</stat>
 </suite>
 </statistics>
 <errors>

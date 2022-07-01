@@ -13,11 +13,13 @@ ${QUIZ_TITLE_ID}    id=com.kotlinquiz.app:id/textView10
 ${APK_PATH}          ${CURDIR}\\app-debug.apk
 ${APP-ID}            com.kotlinquiz.app
 ${APP-ACTIVITY}      com.kotlinquiz.app.ui.splash.SplashActivity
+${MVI_ID}            com.example.testmviandmockito.ux.main.MainActivity
+${MOCKO_PACKAGE}     com.example.testmviandmockito
 ${DEVICE_ID}    emulator-5554 
 
 *** Keywords ***
 Start Appium
-    Start Process  appium  -a  localhost  -p  4723  shell=True  alias=appiumserver  stdout=${EXECDIR}/Output/Appium Handler/appium_stdout.txt   stderr=${EXECDIR}/Output/Appium Handler/appium_stderr.txt
+    Start Process  appium  -a  localhost  -p  4723   shell=True  alias=appiumserver  stdout=${EXECDIR}/Output/Appium Handler/appium_stdout.txt   stderr=${EXECDIR}/Output/Appium Handler/appium_stderr.txt
     Process Should Be Running     appiumserver
     #Sleep  10s
 
@@ -30,8 +32,8 @@ Restart Application
     Wait Until Page Contains Element            ${QUIZ_TITLE_ID}
 
 Run Application
-    [Arguments]     ${noReset}=false
-    Open Application   http://localhost:4723/wd/hub    noReset=${noReset}     platformName=Android   deviceName=${DEVICE_ID}  appPackage=${APP-ID}  appActivity=${APP-ACTIVITY}  automationName=Uiautomator2
+    [Arguments]     ${noReset}=true
+    Open Application   http://localhost:4723/wd/hub    noReset=${noReset}     platformName=Android    platformVersion=11   deviceName=${DEVICE_ID}  appPackage=${MOCKO_PACKAGE}  appActivity=${MVI_ID}  automationName=Uiautomator2
 
 Begin Android Test
     Set Appium Timeout    10
