@@ -5,17 +5,14 @@ Library    Process
 
 *** Variables ***
 #*** Home Variables ***
-${MAIN_FRAME_ID}        id=com.kotlinquiz.app:id/action_bar_root
-${MAIN_AVARAR_ID}       id=com.kotlinquiz.app:id/avatarImg
-#*** Quiz Context ***
-${QUIZ_TITLE_ID}    id=com.kotlinquiz.app:id/textView10
+${AGNET-ICON}        id=com.airbus.agnet.mission:id/bootstrapAppLogo
+
 #*** Application Variables ***
 ${APK_PATH}          ${CURDIR}\\app-debug.apk
 ${APP-ID}            com.kotlinquiz.app
-${APP-ACTIVITY}      com.kotlinquiz.app.ui.splash.SplashActivity
-${MVI_ID}            com.example.testmviandmockito.ux.main.MainActivity
-${MOCKO_PACKAGE}     com.example.testmviandmockito
-${DEVICE_ID}    emulator-5554 
+${APP-ACTIVITY}      com.airbus.agnet.work.main.MainActivity
+${APP_PACKAGE}       com.airbus.agnet.mission
+${DEVICE_ID}         emulator-5554 
 
 *** Keywords ***
 Start Appium
@@ -29,18 +26,42 @@ Stop Appium process
 Restart Application
     Close Application
     Run Application    noReset=true
-    Wait Until Page Contains Element            ${QUIZ_TITLE_ID}
+    Wait Until Page Contains Element            ${AGNET-ICON}
 
 Run Application
     [Arguments]     ${noReset}=true
-    Open Application   http://localhost:4723/wd/hub    noReset=${noReset}     platformName=Android    platformVersion=11   deviceName=${DEVICE_ID}  appPackage=${MOCKO_PACKAGE}  appActivity=${MVI_ID}  automationName=Uiautomator2
+    Open Application   http://localhost:4723/wd/hub    noReset=${noReset}     platformName=Android    platformVersion=11   deviceName=${DEVICE_ID}  appPackage=${APP_PACKAGE}  appActivity=${APP-ACTIVITY}  automationName=Uiautomator2
 
 Begin Android Test
     Set Appium Timeout    10
     Start Appium
     Run Application
-    Wait Until Page Contains Element            ${MAIN_AVARAR_ID}
+    Wait Until Page Contains Element            ${AGNET-ICON}
+    Sleep  2s
 
 End Android Test
     Stop Appium process
     Close Application
+
+Open Settings Context
+    Click Element   ${AGNET-ICON}
+    Wait Until Page Contains Element            ${APPLY-BUTTON}
+
+Change Server Values
+    Clear Text      ${CONF-FIELD}
+    Input Text      ${CONF-FIELD}       conf-1.qa-1.eu-west-1.agnet.com
+    Clear Text      ${HOSTNAME-FIELD}
+    Input Text      ${HOSTNAME-FIELD}   agnet.com
+    Sleep  1s
+    Click Element   ${APPLY-BUTTON}
+
+Change Organization ID
+    Wait Until Page Contains Element            ${AGNET-ICON}
+    Input Text      ${ORGANIZATION-ID-FIELD}        530739
+
+Register Organization
+    Click Element   ${TERMS-CHECKBOX}
+    Click Element   ${REGISTER-BUTTON}  
+    Sleep  20s
+
+

@@ -1,5 +1,5 @@
 *** Settings ***
-Resource    ../Resources/KotlinQuiz.robot
+Resource    ../Resources/Agnet.robot
 Test Setup  Begin Android Test
 Test Teardown  End Android Test
 Library    Process
@@ -15,20 +15,21 @@ Install KotlinQuiz
     Install Application
     #Check Application is installed
 
-Check Restore Contexts
-    [Tags]    Current
-    Change Context
+Restart Application
     Restart Application
 
-Select all yes
+Change Server Credentials
     
-    Change Context
-    Click all yes
+    Open Settings Context
+    Change Server Values
+    Change Organization ID
 
-Test try
-    
-    Change Context
-    Test Test
-    
+Log in
+    [Tags]    Current
+    Open Settings Context
+    Change Server Values
+    Change Organization ID
+    Register Organization 
+
 *** Keywords ***    
 
