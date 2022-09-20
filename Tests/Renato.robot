@@ -1,25 +1,18 @@
 *** Settings ***
-Resource    ../Resources/Agnet.robot
-Test Setup  Begin Android Test
-Test Teardown  End Android Test
-Library    Process
+Resource        ../Resources/Agnet.robot
+Test Setup      Begin Android Test
+Test Teardown   End Android Test
+Library         Process
 
 *** Variables ***
 ${DEVICE_ID}    emulator-5554 
 
-
 *** Test Cases ***
-
-Install KotlinQuiz
-    
-    Install Application
-    #Check Application is installed
 
 Restart Application
     Restart Application
 
 Change Server Credentials
-    
     Open Settings Context
     Change Server Values
     Change Organization ID

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220908 12:51:27.957" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0.1 (Python 3.10.4 on win32)" generated="20220909 12:27:44.270" rpa="false" schemaversion="3">
 <suite id="s1" name="Renato" source="C:\Users\renato.martin\Desktop\Shits\Airbus\KotlinQuiz\code\KotlinQuiz\Tests\Renato.robot">
-<test id="s1-t1" name="Log in" line="27">
+<test id="s1-t1" name="Log in" line="20">
 <kw name="Begin Android Test" library="Common" type="SETUP">
 <kw name="Set Appium Timeout" library="AppiumLibrary">
 <arg>10</arg>
 <doc>Sets the timeout in seconds used by various keywords.</doc>
-<status status="PASS" starttime="20220908 12:51:28.135" endtime="20220908 12:51:28.135"/>
+<status status="PASS" starttime="20220909 12:27:44.451" endtime="20220909 12:27:44.451"/>
 </kw>
 <kw name="Start Appium" library="Common">
 <kw name="Start Process" library="Process">
@@ -20,16 +20,16 @@
 <arg>stdout=${EXECDIR}/Output/Appium Handler/appium_stdout.txt</arg>
 <arg>stderr=${EXECDIR}/Output/Appium Handler/appium_stderr.txt</arg>
 <doc>Starts a new process on background.</doc>
-<msg timestamp="20220908 12:51:28.136" level="INFO">Starting process:
+<msg timestamp="20220909 12:27:44.452" level="INFO">Starting process:
 appium -a localhost -p 4723</msg>
-<status status="PASS" starttime="20220908 12:51:28.136" endtime="20220908 12:51:28.142"/>
+<status status="PASS" starttime="20220909 12:27:44.451" endtime="20220909 12:27:44.456"/>
 </kw>
 <kw name="Process Should Be Running" library="Process">
 <arg>appiumserver</arg>
 <doc>Verifies that the process is running.</doc>
-<status status="PASS" starttime="20220908 12:51:28.142" endtime="20220908 12:51:28.142"/>
+<status status="PASS" starttime="20220909 12:27:44.456" endtime="20220909 12:27:44.456"/>
 </kw>
-<status status="PASS" starttime="20220908 12:51:28.135" endtime="20220908 12:51:28.142"/>
+<status status="PASS" starttime="20220909 12:27:44.451" endtime="20220909 12:27:44.456"/>
 </kw>
 <kw name="Run Application" library="Common">
 <kw name="Open Application" library="AppiumLibrary">
@@ -47,119 +47,101 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 | *Option*            | *Man.* | *Description*     |
 | remote_url          | Yes    | Appium server url |
 | alias               | no     | alias             |</doc>
-<status status="PASS" starttime="20220908 12:51:28.143" endtime="20220908 12:51:34.856"/>
+<status status="PASS" starttime="20220909 12:27:44.457" endtime="20220909 12:27:51.885"/>
 </kw>
-<status status="PASS" starttime="20220908 12:51:28.142" endtime="20220908 12:51:34.856"/>
+<status status="PASS" starttime="20220909 12:27:44.457" endtime="20220909 12:27:51.886"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${AGNET-ICON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220908 12:51:34.856" endtime="20220908 12:51:36.163"/>
+<status status="PASS" starttime="20220909 12:27:51.886" endtime="20220909 12:27:53.144"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
 <arg>2s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220908 12:51:38.166" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220908 12:51:36.163" endtime="20220908 12:51:38.166"/>
+<msg timestamp="20220909 12:27:55.151" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20220909 12:27:53.145" endtime="20220909 12:27:55.151"/>
 </kw>
-<status status="PASS" starttime="20220908 12:51:28.135" endtime="20220908 12:51:38.166"/>
+<status status="PASS" starttime="20220909 12:27:44.450" endtime="20220909 12:27:55.151"/>
 </kw>
 <kw name="Open Settings Context" library="Common">
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${AGNET-ICON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:38.168" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/bootstrapAppLogo'.</msg>
-<status status="PASS" starttime="20220908 12:51:38.167" endtime="20220908 12:51:38.240"/>
+<msg timestamp="20220909 12:27:55.153" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/bootstrapAppLogo'.</msg>
+<status status="PASS" starttime="20220909 12:27:55.152" endtime="20220909 12:27:55.228"/>
 </kw>
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${APPLY-BUTTON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220908 12:51:38.240" endtime="20220908 12:51:38.910"/>
+<status status="PASS" starttime="20220909 12:27:55.228" endtime="20220909 12:27:55.926"/>
 </kw>
-<status status="PASS" starttime="20220908 12:51:38.166" endtime="20220908 12:51:38.910"/>
+<status status="PASS" starttime="20220909 12:27:55.151" endtime="20220909 12:27:55.926"/>
 </kw>
 <kw name="Change Server Values" library="Common">
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${CONF-FIELD}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:38.912" level="INFO">Clear text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsConfigServer'</msg>
-<status status="PASS" starttime="20220908 12:51:38.910" endtime="20220908 12:51:38.946"/>
+<msg timestamp="20220909 12:27:55.928" level="INFO">Clear text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsConfigServer'</msg>
+<status status="PASS" starttime="20220909 12:27:55.927" endtime="20220909 12:27:55.964"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${CONF-FIELD}</arg>
 <arg>conf-1.qa-1.eu-west-1.agnet.com</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:38.948" level="INFO">Typing text 'conf-1.qa-1.eu-west-1.agnet.com' into text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsConfigServer'</msg>
-<status status="PASS" starttime="20220908 12:51:38.947" endtime="20220908 12:51:39.582"/>
+<msg timestamp="20220909 12:27:55.966" level="INFO">Typing text 'conf-1.qa-1.eu-west-1.agnet.com' into text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsConfigServer'</msg>
+<status status="PASS" starttime="20220909 12:27:55.965" endtime="20220909 12:27:57.120"/>
 </kw>
 <kw name="Clear Text" library="AppiumLibrary">
 <arg>${HOSTNAME-FIELD}</arg>
 <doc>Clears the text field identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:39.583" level="INFO">Clear text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsHostName'</msg>
-<status status="PASS" starttime="20220908 12:51:39.582" endtime="20220908 12:51:40.103"/>
+<msg timestamp="20220909 12:27:57.124" level="INFO">Clear text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsHostName'</msg>
+<status status="PASS" starttime="20220909 12:27:57.120" endtime="20220909 12:27:57.648"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
 <arg>${HOSTNAME-FIELD}</arg>
 <arg>agnet.com</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:40.105" level="INFO">Typing text 'agnet.com' into text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsHostName'</msg>
-<status status="PASS" starttime="20220908 12:51:40.104" endtime="20220908 12:51:40.745"/>
+<msg timestamp="20220909 12:27:57.651" level="INFO">Typing text 'agnet.com' into text field 'id=com.airbus.agnet.mission:id/changeDefaultUrlsHostName'</msg>
+<status status="PASS" starttime="20220909 12:27:57.648" endtime="20220909 12:27:58.767"/>
 </kw>
 <kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
+<arg>1s</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220908 12:51:42.749" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220908 12:51:40.745" endtime="20220908 12:51:42.749"/>
+<msg timestamp="20220909 12:27:59.778" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20220909 12:27:58.768" endtime="20220909 12:27:59.778"/>
 </kw>
 <kw name="Click Element" library="AppiumLibrary">
 <arg>${APPLY-BUTTON}</arg>
 <doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:42.750" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/changeDefaultUrlsApply'.</msg>
-<status status="PASS" starttime="20220908 12:51:42.749" endtime="20220908 12:51:42.813"/>
+<msg timestamp="20220909 12:27:59.779" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/changeDefaultUrlsApply'.</msg>
+<status status="PASS" starttime="20220909 12:27:59.778" endtime="20220909 12:27:59.846"/>
 </kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220908 12:51:44.819" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220908 12:51:42.813" endtime="20220908 12:51:44.819"/>
-</kw>
-<status status="PASS" starttime="20220908 12:51:38.910" endtime="20220908 12:51:44.819"/>
+<status status="PASS" starttime="20220909 12:27:55.926" endtime="20220909 12:27:59.847"/>
 </kw>
 <kw name="Change Organization ID" library="Common">
 <kw name="Wait Until Page Contains Element" library="AppiumLibrary">
 <arg>${AGNET-ICON}</arg>
 <doc>Waits until element specified with `locator` appears on current page.</doc>
-<status status="PASS" starttime="20220908 12:51:44.820" endtime="20220908 12:51:44.844"/>
+<status status="PASS" starttime="20220909 12:27:59.847" endtime="20220909 12:28:00.115"/>
 </kw>
 <kw name="Input Text" library="AppiumLibrary">
-<arg>${ORGANIZATION-ID-FIELD}</arg>
+<arg>asdasda</arg>
 <arg>530739</arg>
 <doc>Types the given `text` into text field identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:44.846" level="INFO">Typing text '530739' into text field 'id=com.airbus.agnet.mission:id/bootstrapOrganizationId'</msg>
-<status status="PASS" starttime="20220908 12:51:44.845" endtime="20220908 12:51:44.898"/>
+<msg timestamp="20220909 12:28:00.116" level="INFO">Typing text '530739' into text field 'asdasda'</msg>
+<kw name="Capture Page Screenshot" library="AppiumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
+<msg timestamp="20220909 12:28:00.687" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="appium-screenshot-1.png"&gt;&lt;img src="appium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220909 12:28:00.421" endtime="20220909 12:28:00.687"/>
 </kw>
-<status status="PASS" starttime="20220908 12:51:44.819" endtime="20220908 12:51:44.898"/>
+<msg timestamp="20220909 12:28:00.688" level="FAIL">ValueError: Element locator 'asdasda' did not match any elements.</msg>
+<status status="FAIL" starttime="20220909 12:28:00.115" endtime="20220909 12:28:00.711"/>
+</kw>
+<status status="FAIL" starttime="20220909 12:27:59.847" endtime="20220909 12:28:00.712"/>
 </kw>
 <kw name="Register Organization" library="Common">
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${TERMS-CHECKBOX}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:44.900" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/bootstrapAcceptTermsCheckbox'.</msg>
-<status status="PASS" starttime="20220908 12:51:44.899" endtime="20220908 12:51:45.441"/>
-</kw>
-<kw name="Click Element" library="AppiumLibrary">
-<arg>${REGISTER-BUTTON}</arg>
-<doc>Click element identified by `locator`.</doc>
-<msg timestamp="20220908 12:51:45.443" level="INFO">Clicking element 'id=com.airbus.agnet.mission:id/bootstrapRegisterOrganizationButton'.</msg>
-<status status="PASS" starttime="20220908 12:51:45.441" endtime="20220908 12:51:46.074"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>20s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220908 12:52:06.081" level="INFO">Slept 20 seconds</msg>
-<status status="PASS" starttime="20220908 12:51:46.074" endtime="20220908 12:52:06.081"/>
-</kw>
-<status status="PASS" starttime="20220908 12:51:44.899" endtime="20220908 12:52:06.081"/>
+<status status="NOT RUN" starttime="20220909 12:28:00.712" endtime="20220909 12:28:00.712"/>
 </kw>
 <kw name="End Android Test" library="Common" type="TEARDOWN">
 <kw name="Stop Appium process" library="Common">
@@ -167,32 +149,32 @@ Please check https://github.com/appium/appium/blob/master/docs/en/writing-runnin
 <arg>appiumserver</arg>
 <arg>kill=True</arg>
 <doc>Stops the process gracefully or forcefully.</doc>
-<msg timestamp="20220908 12:52:06.083" level="INFO">Forcefully killing process.</msg>
-<msg timestamp="20220908 12:52:06.083" level="INFO">Process completed.</msg>
-<status status="PASS" starttime="20220908 12:52:06.083" endtime="20220908 12:52:06.083"/>
+<msg timestamp="20220909 12:28:00.714" level="INFO">Forcefully killing process.</msg>
+<msg timestamp="20220909 12:28:00.714" level="INFO">Process completed.</msg>
+<status status="PASS" starttime="20220909 12:28:00.714" endtime="20220909 12:28:00.714"/>
 </kw>
-<status status="PASS" starttime="20220908 12:52:06.082" endtime="20220908 12:52:06.083"/>
+<status status="PASS" starttime="20220909 12:28:00.713" endtime="20220909 12:28:00.715"/>
 </kw>
 <kw name="Close Application" library="AppiumLibrary">
 <doc>Closes the current application and also close webdriver session.</doc>
-<status status="PASS" starttime="20220908 12:52:06.083" endtime="20220908 12:52:06.391"/>
+<status status="PASS" starttime="20220909 12:28:00.715" endtime="20220909 12:28:01.037"/>
 </kw>
-<status status="PASS" starttime="20220908 12:52:06.082" endtime="20220908 12:52:06.391"/>
+<status status="PASS" starttime="20220909 12:28:00.713" endtime="20220909 12:28:01.038"/>
 </kw>
 <tag>Current</tag>
-<status status="PASS" starttime="20220908 12:51:28.134" endtime="20220908 12:52:06.392"/>
+<status status="FAIL" starttime="20220909 12:27:44.450" endtime="20220909 12:28:01.038">ValueError: Element locator 'asdasda' did not match any elements.</status>
 </test>
-<status status="PASS" starttime="20220908 12:51:27.959" endtime="20220908 12:52:06.393"/>
+<status status="FAIL" starttime="20220909 12:27:44.271" endtime="20220909 12:28:01.040"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
-<stat pass="1" fail="0" skip="0">Current</stat>
+<stat pass="0" fail="1" skip="0">Current</stat>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Renato">Renato</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Renato">Renato</stat>
 </suite>
 </statistics>
 <errors>
